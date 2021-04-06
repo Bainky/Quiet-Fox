@@ -166,9 +166,6 @@
   user_pref("extensions.pocket.enabled", false);
  /* Отключаем встроенное расширение Screenshots */
   user_pref("extensions.screenshots.disabled", true);
- /* Включаем запуск дополнений в приватном режиме
-  * Могут не работать расширения от Mozilla (Контейнеры) */
-  user_pref("extensions.allowPrivateBrowsingByDefault", true);
  /* Отключаем ограничения расширений для доменов Mozilla */
   user_pref("extensions.webextensions.restrictedDomains", "");
  /* Отключаем Web Compatibility Reporter
@@ -308,6 +305,10 @@
     * [1] https://www.bleepingcomputer.com/news/software/major-browsers-to-prevent-disabling-of-click-tracking-privacy-risk/ */
     // user_pref("browser.send_pings", false); // [DEFAULT: false] // ! Задокументированно
     // user_pref("browser.send_pings.require_same_host", true); // ! Удаленно в 87-beta
+
+   /* Включаем запуск дополнений в приватном режиме
+    * Могут не работать расширения от Mozilla (Контейнеры) */
+    // user_pref("extensions.allowPrivateBrowsingByDefault", true);
 
  // user_pref("privacy.resistFingerprinting", true);
  // user_pref("browser.urlbar.speculativeConnect.enabled", false);
