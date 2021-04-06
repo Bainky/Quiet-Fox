@@ -32,8 +32,8 @@
   user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false); // [Топ сайтов] Топ сайтов спонсоров
  /* Отключаем рекомендацию расширений и настроек
   * [SETTING] Основное > Просмотр сайтов > Рекомендовать <pref> при просмотре */
- user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false); // Функции
- user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false); // Расширения
+  user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false); // Функции
+  user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false); // Расширения
  /* Отключаем новости на главной странице и спонсируемый контент */
   user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);
   user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
@@ -188,8 +188,8 @@
  /* Включаем расшифровывавание ссылки при копировании */
   user_pref("browser.urlbar.decodeURLsOnCopy", true)
  /* Включаем отображение подсказок в режиме инкогнито
- * [SETTING] Поиск > Отображать поисковые предложения в Приватных окнах */
- user_pref("browser.search.suggest.enabled.private", true);
+  * [SETTING] Поиск > Отображать поисковые предложения в Приватных окнах */
+  user_pref("browser.search.suggest.enabled.private", true);
 
 
 /* ПРИВАТНОСТЬ */
@@ -225,12 +225,12 @@
 
 /* ИНТЕРФЕЙС */
  /* Включение темной темы */
- user_pref("devtools.theme", "dark");
- user_pref("reader.color_scheme", "dark");
+  user_pref("devtools.theme", "dark");
+  user_pref("reader.color_scheme", "dark");
  /* Включение функции "Подсветить все" в поиске по словам */
- user_pref("findbar.highlightAll", true);
+  user_pref("findbar.highlightAll", true);
  /* Отключаем клавишу Alt, переключающую строку меню */
- user_pref("ui.key.menuAccessKey", 0);
+  user_pref("ui.key.menuAccessKey", 0);
 
 
 
