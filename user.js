@@ -221,9 +221,11 @@
 
 
 /* ИНТЕРФЕЙС */
+ /* Добавляем кнопку "Включить/Отключить звук" в режиме "Картинка в картинке" */
+  user_pref("media.videocontrols.picture-in-picture.audio-toggle.enabled", true);
  /* Включение темной темы */
-  user_pref("devtools.theme", "dark");
   user_pref("reader.color_scheme", "dark");
+  user_pref("devtools.theme", "dark");
  /* Включение функции "Подсветить все" в поиске по словам */
   user_pref("findbar.highlightAll", true);
  /* Отключаем клавишу Alt, переключающую строку меню */
@@ -298,7 +300,7 @@
     * [1] https://developer.mozilla.org/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control */
     // user_pref("network.dns.disablePrefetch", true);
     // user_pref("network.dns.disablePrefetchFromHTTPS", true); // [DEFAULT: true] // ! Задокументированно
-   /* Отключить предиктор / предварительную выборку */
+   /* Отключаем предиктор / предварительную выборку */
     // user_pref("network.predictor.enabled", false);
     // user_pref("network.predictor.enable-prefetch", false); // [DEFAULT: false] // ! Задокументированно
    /* Не применять «Аудит гиперссылок» (отслеживание кликов)
