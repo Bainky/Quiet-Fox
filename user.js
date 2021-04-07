@@ -223,13 +223,15 @@
 /* ИНТЕРФЕЙС */
  /* Добавляем кнопку "Включить/Отключить звук" в режиме "Картинка в картинке" */
   user_pref("media.videocontrols.picture-in-picture.audio-toggle.enabled", true);
- /* Включение темной темы */
-  user_pref("reader.color_scheme", "dark");
-  user_pref("devtools.theme", "dark");
- /* Включение функции "Подсветить все" в поиске по словам */
-  user_pref("findbar.highlightAll", true);
- /* Отключаем клавишу Alt, переключающую строку меню */
+ /* Отключаем предупреждение при включении полноэкранного режима*/
+  user_pref("full-screen-api.warning.timeout", 0)
+ /* Отключаем клавишу Alt, переключающую меню */
   user_pref("ui.key.menuAccessKey", 0);
+ /* Включаем темную тему */
+  user_pref("devtools.theme", "dark");
+  user_pref("reader.color_scheme", "dark");
+ /* Включаем функцию "Подсветить все" в CTRL+F */
+  user_pref("findbar.highlightAll", true);
 
 
 
