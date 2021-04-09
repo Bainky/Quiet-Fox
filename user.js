@@ -3,7 +3,7 @@
  user_pref("general.warnOnAboutConfig", false); // XHTML version
  user_pref("browser.aboutConfig.showWarning", false); // HTML version
 /* Установливаем предпочтительный язык для отображения страниц */
- user_pref("intl.accept_languages", "ru, en-US, en");
+ user_pref("intl.accept_languages", "ru-ru, ru, en-us, en");
 
 
 
