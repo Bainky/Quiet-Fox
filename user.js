@@ -1,5 +1,5 @@
 /* НАЧАЛО */
- /* Отключаем предупреждения в about:config */
+ /* Отключаем предупреждения на about:config */
  user_pref("general.warnOnAboutConfig", false); // XHTML version
  user_pref("browser.aboutConfig.showWarning", false); // HTML version
 /* Установливаем предпочтительный язык для отображения страниц */
@@ -52,6 +52,19 @@
 
 
 
+/* ПОИСК */
+ /* Включаем отображение подсказок в режиме инкогнито
+  * [SETTING] Поиск > Отображать поисковые предложения в Приватных окнах */
+ user_pref("browser.search.suggest.enabled.private", true);
+ /* Отключаем возможность поиска среди закладок и истории */
+  user_pref("browser.urlbar.shortcuts.bookmarks", false);
+  user_pref("browser.urlbar.shortcuts.history", false);
+  user_pref("browser.urlbar.shortcuts.tabs", false);
+ /* Включаем расшифровывавание ссылки при копировании */
+  user_pref("browser.urlbar.decodeURLsOnCopy", true)
+
+
+
 /* ОТЧЕТЫ */
  /* Отключаем автоматическую установку расширений и обновлений тем  
  * [SETTING] about:addons>Расширения>Автоматически обновлять дополнения */
@@ -70,7 +83,7 @@
   user_pref("extensions.getAddons.showPane", false); // [HIDDEN PREF]
  /* Отключаем рекомендации расширений и тем на на about:addons */
   user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
- /* Отключаем предложение "пожаловаться на это расширение" при удалении*/
+ /* Отключаем предложение "Пожаловаться на это расширение" при удалении */
   user_pref("extensions.abuseReport.enabled", false);
 
 
@@ -166,9 +179,7 @@
   user_pref("extensions.pocket.enabled", false);
  /* Отключаем встроенное расширение Screenshots */
   user_pref("extensions.screenshots.disabled", true);
- /* Отключаем ограничения расширений для доменов Mozilla */
-  user_pref("extensions.webextensions.restrictedDomains", "");
- /* Отключаем Web Compatibility Reporter
+ /* Отключаем встроенное расширение Web Compatibility Reporter
   * Добавляет кнопку «Сообщить о проблеме на сайте» для отправки данных в Mozilla */
   user_pref("extensions.webcompat-reporter.enabled", false); // [DEFAULT: false]
  /* Отключаем ограничения расширений для доменов Mozilla */
@@ -177,23 +188,11 @@
 
 
 
-/* ПОИСК */
- /* Отключаем возможность поиска среди закладок и истории */
-  user_pref("browser.urlbar.shortcuts.bookmarks", false);
-  user_pref("browser.urlbar.shortcuts.history", false);
-  user_pref("browser.urlbar.shortcuts.tabs", false);
- /* Включаем расшифровывавание ссылки при копировании */
-  user_pref("browser.urlbar.decodeURLsOnCopy", true)
- /* Включаем отображение подсказок в режиме инкогнито
-  * [SETTING] Поиск > Отображать поисковые предложения в Приватных окнах */
-  user_pref("browser.search.suggest.enabled.private", true);
-
-
 /* ПРИВАТНОСТЬ */
  /* Включаем блокировку сторонних файлов Cookie
   * [SETTING] Приватность > Защита от отслеживания > Все сторонние куки */
-  user_pref("network.cookie.cookieBehavior", 1);
   user_pref("browser.contentblocking.category", "custom");
+  user_pref("network.cookie.cookieBehavior", 1);
  /* Разрешаем работу Enhanced Tracking Protection во всех окнах
   * [SETTING] Приватность > Защита от отслеживания > Во всех окнах */
   user_pref("privacy.trackingprotection.enabled", true);
@@ -213,6 +212,7 @@
   user_pref("dom.battery.enabled", false);
 
 
+
 /* РАЗНОЕ */
  /* Отключаем асинхронные запросы, используемые для аналитики */
   user_pref("beacon.enabled", false);
@@ -223,12 +223,14 @@
   user_pref("webchannel.allowObject.urlWhitelist", "");
 
 
+
 /* ПАРОЛИ */
  /* Отключаем сохранение паролей в браузере 
   * [SETTING] Приватность > Логины и пароли */
   user_pref("signon.rememberSignons", false); // Запрашивать сохранение логинов и паролей для веб-сайтов
   user_pref("signon.generation.enabled", false); // Предлагать и генерировать надежные пароли
   user_pref("signon.autofillForms", false); // Автозаполнять логины и пароли
+
 
 
 /* ИНТЕРФЕЙС */
