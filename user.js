@@ -198,6 +198,8 @@
  /* Включаем функцию "Контейнеры" */
   user_pref("privacy.userContext.ui.enabled", true);
   user_pref("privacy.userContext.enabled", true);
+ /* Включаем режим "Только HTTPS" на всех сайтах */
+  user_pref("dom.security.https_only_mode", true);
  /* Отключаем показ состояния батареи */
   user_pref("dom.battery.enabled", false);
 
