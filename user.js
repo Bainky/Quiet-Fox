@@ -61,7 +61,7 @@
   user_pref("browser.urlbar.shortcuts.history", false);
   user_pref("browser.urlbar.shortcuts.tabs", false);
  /* Включаем расшифровывавание ссылки при копировании */
-  user_pref("browser.urlbar.decodeURLsOnCopy", true)
+  user_pref("browser.urlbar.decodeURLsOnCopy", true);
 
 
 
@@ -196,7 +196,7 @@
  /* Разрешаем работу Enhanced Tracking Protection во всех окнах
   * [SETTING] Приватность > Защита от отслеживания > Во всех окнах */
   user_pref("privacy.trackingprotection.enabled", true);
- /* Включаем использование различных списков для защиты ETP */
+ /* Включаем блокировку трекеров социальных сетей в ETP */
   user_pref("privacy.trackingprotection.socialtracking.enabled", true);
  /* Включаем отправку веб-сайтам сигнал «Не отслеживать»
   * Приватность > Отправлять веб-сайтам сигнал «Не отслеживать» */
@@ -237,7 +237,7 @@
  /* Добавляем кнопку "Включить/Отключить звук" в режиме "Картинка в картинке" */
   user_pref("media.videocontrols.picture-in-picture.audio-toggle.enabled", true);
  /* Отключаем предупреждение при включении полноэкранного режима*/
-  user_pref("full-screen-api.warning.timeout", 0)
+  user_pref("full-screen-api.warning.timeout", 0);
  /* Отключаем клавишу Alt, переключающую меню */
   user_pref("ui.key.menuAccessKey", 0);
  /* Включаем темную тему */
@@ -302,7 +302,7 @@
  /* Отключаем отправку телеметрии владельцам сайтов
   * С помощью этой функции, разработчик сайта может узнать например,
   * за какое время у пользователя загрузился тот или иной элемент.
-  * [1] https://habr.com/ru/post/459880/*/
+  * [1] https://habr.com/ru/post/459880/ */
   // user_pref("dom.enable_performance_observer", false);
 
   /* NETWORK */
