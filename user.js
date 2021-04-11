@@ -55,7 +55,7 @@
 /* ПОИСК */
  /* Включаем отображение подсказок в режиме инкогнито
   * [SETTING] Поиск > Отображать поисковые предложения в Приватных окнах */
- user_pref("browser.search.suggest.enabled.private", true);
+  user_pref("browser.search.suggest.enabled.private", true);
  /* Отключаем возможность поиска среди закладок и истории */
   user_pref("browser.urlbar.shortcuts.bookmarks", false);
   user_pref("browser.urlbar.shortcuts.history", false);
@@ -236,6 +236,8 @@
 /* ИНТЕРФЕЙС */
  /* Добавляем кнопку "Включить/Отключить звук" в режиме "Картинка в картинке" */
   user_pref("media.videocontrols.picture-in-picture.audio-toggle.enabled", true);
+ /* Включаем отображение расширенной информации на страницах предупреждений */
+  user_pref("browser.xul.error_pages.expert_bad_cert", true);
  /* Отключаем предупреждение при включении полноэкранного режима*/
   user_pref("full-screen-api.warning.timeout", 0);
  /* Отключаем клавишу Alt, переключающую меню */
