@@ -190,14 +190,23 @@
 
 
 /* ПРИВАТНОСТЬ */
+ /* Включаем блокировку сторонних файлов Cookie
+  * [SETTING] Приватность > Защита от отслеживания > Все сторонние куки */
+  user_pref("network.cookie.cookieBehavior", 1);
+  user_pref("browser.contentblocking.category", "custom");
+ /* Разрешаем работу Enhanced Tracking Protection во всех окнах
+  * [SETTING] Приватность > Защита от отслеживания > Во всех окнах */
+  user_pref("privacy.trackingprotection.enabled", true);
+ /* Включаем использование различных списков для защиты ETP */
+  user_pref("privacy.trackingprotection.socialtracking.enabled", true);
  /* Включаем отправку веб-сайтам сигнал «Не отслеживать»
   * Приватность > Отправлять веб-сайтам сигнал «Не отслеживать» */
   user_pref("privacy.donottrackheader.enabled", true);
- /* Включаем First Party Isolation */
-  user_pref("privacy.firstparty.isolate", true);
- /* Включаем функцию "Контейнеры" */
+ /* Включаем функцию "Контейнеры" без расширения */
   user_pref("privacy.userContext.ui.enabled", true);
   user_pref("privacy.userContext.enabled", true);
+ /* Включаем First Party Isolation */
+  user_pref("privacy.firstparty.isolate", true);
  /* Включаем режим "Только HTTPS" на всех сайтах */
   user_pref("dom.security.https_only_mode", true);
  /* Отключаем показ состояния батареи */
@@ -216,7 +225,7 @@
 
 /* ПАРОЛИ */
  /* Отключаем сохранение паролей в браузере 
-  * [SETTING] Приватность и защита > Логины и пароли */
+  * [SETTING] Приватность > Логины и пароли */
   user_pref("signon.rememberSignons", false); // Запрашивать сохранение логинов и паролей для веб-сайтов
   user_pref("signon.generation.enabled", false); // Предлагать и генерировать надежные пароли
   user_pref("signon.autofillForms", false); // Автозаполнять логины и пароли
