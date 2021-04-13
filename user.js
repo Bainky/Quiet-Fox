@@ -246,6 +246,7 @@
   user_pref("browser.xul.error_pages.expert_bad_cert", true);
  /* Отключаем предупреждение при включении полноэкранного режима*/
   user_pref("full-screen-api.warning.timeout", 0);
+  user_pref("full-screen-api.warning.delay", 0);
  /* Отключаем клавишу Alt, переключающую меню */
   user_pref("ui.key.menuAccessKey", 0);
  /* Включаем темную тему */
