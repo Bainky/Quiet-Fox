@@ -1,9 +1,9 @@
 /* НАЧАЛО */
  /* Отключаем предупреждения на about:config */
- user_pref("general.warnOnAboutConfig", false); // XHTML version
- user_pref("browser.aboutConfig.showWarning", false); // HTML version
-/* Установливаем предпочтительный язык для отображения страниц */
- user_pref("intl.accept_languages", "ru-ru, ru, en-us, en");
+  user_pref("general.warnOnAboutConfig", false); // XHTML version
+  user_pref("browser.aboutConfig.showWarning", false); // HTML version
+ /* Установливаем предпочтительный язык для отображения страниц */
+  user_pref("intl.accept_languages", "ru-ru, ru, en-us, en");
 
 
 
@@ -11,11 +11,9 @@
  /* Отключаем проверку браузера по умолчанию
   * [SETTING] Основное > Запуск > Проверять, является ли Firefox браузером по умолчанию */
   user_pref("browser.shell.checkDefaultBrowser", false);
-/* Отключаем использование рекомендуемых настроек по умолчанию
- * [SETTING] Основное > Производительность > Использовать рекомендуемые настройки */
+ /* Отключаем использование рекомендуемых настроек по умолчанию
+  * [SETTING] Основное > Производительность > Использовать рекомендуемые настройки */
   user_pref("browser.preferences.defaultPerformanceSettings.enabled", false);
- /* Отключаем новостную ленту (AS)
-  * AS - это домашняя страница с новостями на основе ваших поисковых запросов..
  /* Отключаем телеметрию ленты активности */
   user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
   user_pref("browser.newtabpage.activity-stream.telemetry", false);
