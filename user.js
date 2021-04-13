@@ -181,7 +181,7 @@
   * Добавляет кнопку «Сообщить о проблеме на сайте» для отправки данных в Mozilla */
   user_pref("extensions.webcompat-reporter.enabled", false); // [DEFAULT: false]
  /* Отключаем ограничения расширений для доменов Mozilla */
-  user_pref("privacy.resistFingerprinting.block_mozAddonManage", true); // [HIDDEN PREF]
+  user_pref("privacy.resistFingerprinting.block_mozAddonManager", true); // [HIDDEN PREF]
   user_pref("extensions.webextensions.restrictedDomains", "");
 
 
