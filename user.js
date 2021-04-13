@@ -209,10 +209,20 @@
 
 
 
+/* ЗАЩИТА */
+ /* Включаем блокировку небезопасного контента на https-страницах */
+  user_pref("security.mixed_content.block_active_content", true); // [DEFAULT: true]
+ /* Включаем блокировку небезопасного контента (например, изображения) на https-страницах */
+  user_pref("security.mixed_content.block_display_content", true);
+ /* Включаем блокировку незашифрованных запросов от Flash для предотвращения MitM атак */
+  user_pref("security.mixed_content.block_object_subrequest", true);
+
+
+
 /* РАЗНОЕ */
  /* Отключаем асинхронные запросы, используемые для аналитики */
   user_pref("beacon.enabled", false);
- /* Удаляем специальные разрешения для определенных доменов mozilla [FF35 +]
+ /* Удаляем специальные разрешения для доменов Mozilla [FF35 +]
   * [1] resource://app/defaults/permissions ***/
   user_pref("permissions.manager.defaultsUrl", "");
  /* Удаляем белый список веб-каналов */ 
