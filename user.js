@@ -312,6 +312,8 @@
   * за какое время у пользователя загрузился тот или иной элемент.
   * [1] https://habr.com/ru/post/459880/ */
   // user_pref("dom.enable_performance_observer", false);
+ /* Включаем режим "Только HTTPS" на всех сайтах */
+  // user_pref("dom.security.https_only_mode", true);
 
   /* NETWORK */
    /* Отключаем IPv6 */
