@@ -58,7 +58,7 @@
   user_pref("browser.urlbar.shortcuts.bookmarks", false);
   user_pref("browser.urlbar.shortcuts.history", false);
   user_pref("browser.urlbar.shortcuts.tabs", false);
- /* Включаем расшифровывавание ссылки при копировании */
+ /* Декодировать URL, содержащий UTF8-символы */
   user_pref("browser.urlbar.decodeURLsOnCopy", true);
 
 
