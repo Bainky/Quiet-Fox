@@ -18,6 +18,5 @@ user.js - Это файл конфигурации браузера Firefox. С 
 
 - uBlock ([github](https://github.com/gorhill/uBlock "github"), [firefox](https://addons.mozilla.org/firefox/addon/ublock-origin "firefox"))
 - ClearURLs ([github](https://github.com/ClearURLs/Addon "github"), [firefox](https://addons.mozilla.org/firefox/addon/clearurls "firefox"))
-- LocalCDN ([codeberg](https://codeberg.org/nobody/LocalCDN "codeberg"), [firefox](https://addons.mozilla.org/firefox/addon/localcdn-fork-of-decentraleyes "firefox"))
 - CanvasBlocker ([github](https://github.com/kkapsner/CanvasBlocker "github"), [firefox](https://addons.mozilla.org/firefox/addon/canvasblocker "firefox"))
 - HTTPS Everywhere ([github](https://github.com/EFForg/https-everywhere, "github"), [firefox](https://addons.mozilla.org/firefox/addon/https-everywhere, "firefox"))
