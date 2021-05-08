@@ -73,10 +73,6 @@
  /* Отключаем обновления поисковых систем
   * [NOTE] Это не влияет на встроенные поисковые системы Mozilla или веб-расширения. */
   user_pref("browser.search.update", false);
- /* Отключаем отправку отчетов об ошибках Flash */
-  user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
- /* Отключаем отправку отчетов при сбое плагина */
-  user_pref("dom.ipc.plugins.reportCrashURL", false);
  /* Отключаем панель рекомендуемых расширений на about:addons (Использует Google Analtytics) */
   user_pref("extensions.getAddons.showPane", false); // [HIDDEN PREF]
  /* Отключаем рекомендации расширений и тем на на about:addons */
@@ -317,7 +313,7 @@
  /* Включаем режим "Только HTTPS" на всех сайтах */
   // user_pref("dom.security.https_only_mode", true);
 
-  /* NETWORK */
+  /* СЕТЬ */
    /* Отключаем IPv6 */
     // user_pref("network.dns.disableIPv6", true);
    /* Отключаем предварительную загрузку ссылок
@@ -334,6 +330,12 @@
     * [1] https://www.bleepingcomputer.com/news/software/major-browsers-to-prevent-disabling-of-click-tracking-privacy-risk/ */
     // user_pref("browser.send_pings", false); // [DEFAULT: false] // ! Задокументированно
     // user_pref("browser.send_pings.require_same_host", true); // ! Удаленно в 87-beta
+
+  /* FLASH */
+   /* Отключаем отправку отчетов об ошибках Flash */
+    // user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
+   /* Отключаем отправку отчетов при сбое плагина */
+    // user_pref("dom.ipc.plugins.reportCrashURL", false);
 
    /* Включаем запуск дополнений в приватном режиме
     * Могут не работать расширения от Mozilla (Контейнеры) */
