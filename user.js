@@ -73,7 +73,7 @@
  /* Отключаем обновления поисковых систем
   * [NOTE] Это не влияет на встроенные поисковые системы Mozilla или веб-расширения. */
   user_pref("browser.search.update", false);
- /* Отключаем панель рекомендуемых расширений на about:addons (Использует Google Analtytics) */
+ /* Отключаем панель рекомендуемых расширений на about:addons (Использует Google Analytics) */
   user_pref("extensions.getAddons.showPane", false); // [HIDDEN PREF]
  /* Отключаем рекомендации расширений и тем на на about:addons */
   user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
