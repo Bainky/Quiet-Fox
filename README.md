@@ -20,3 +20,4 @@ user.js - Это файл конфигурации браузера Firefox. С 
 - ClearURLs ([github](https://github.com/ClearURLs/Addon "github"), [firefox](https://addons.mozilla.org/firefox/addon/clearurls "firefox"))
 - CanvasBlocker ([github](https://github.com/kkapsner/CanvasBlocker "github"), [firefox](https://addons.mozilla.org/firefox/addon/canvasblocker "firefox"))
 - HTTPS Everywhere ([github](https://github.com/EFForg/https-everywhere, "github"), [firefox](https://addons.mozilla.org/firefox/addon/https-everywhere, "firefox"))
+- Temporary Containers ([github](https://github.com/stoically/temporary-containers, "github"), [firefox](https://addons.mozilla.org/firefox/addon/temporary-containers/, "firefox"))
