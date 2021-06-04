@@ -60,6 +60,8 @@
   user_pref("browser.urlbar.shortcuts.tabs", false);
  /* Декодировать URL, содержащий UTF8-символы */
   user_pref("browser.urlbar.decodeURLsOnCopy", true);
+ /* Всегда отображать протокол на http сайтах */
+  user_pref("browser.urlbar.trimURLs", false);
 
 
 
