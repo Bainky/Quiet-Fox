@@ -194,6 +194,11 @@
   user_pref("privacy.trackingprotection.enabled", true);
  /* Включаем блокировку трекеров социальных сетей в ETP */
   user_pref("privacy.trackingprotection.socialtracking.enabled", true);
+ /* Запрещаем отправлять referrer (источник перехода) сайтам
+  * Когда вы переходите на сайт, например, с результатов гугла,
+  * сайт может видеть, что вы перешли на сайт с https://www.google.com/ */
+   user_pref("network.http.referer.XOriginPolicy", 2);
+   user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
  /* Включаем отправку веб-сайтам сигнал «Не отслеживать»
   * Приватность > Отправлять веб-сайтам сигнал «Не отслеживать» */
   user_pref("privacy.donottrackheader.enabled", true);
