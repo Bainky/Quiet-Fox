@@ -1,13 +1,7 @@
-/* НАЧАЛО */
+/* ЗАПУСК */
  /* Отключаем предупреждения на about:config */
   user_pref("general.warnOnAboutConfig", false); // XHTML version
   user_pref("browser.aboutConfig.showWarning", false); // HTML version
- /* Установливаем предпочтительный язык для отображения страниц */
-  user_pref("intl.accept_languages", "ru, en");
-
-
-
-/* ЗАПУСК */
  /* Отключаем проверку браузера по умолчанию
   * [SETTING] Основное > Запуск > Проверять, является ли Firefox браузером по умолчанию */
   user_pref("browser.shell.checkDefaultBrowser", false);
