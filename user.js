@@ -210,8 +210,10 @@
   user_pref("privacy.userContext.enabled", true);
  /* Включаем First Party Isolation */
   user_pref("privacy.firstparty.isolate", true);
- /* Отключаем показ состояния батареи */
+ /* Запрещаем сайтам видеть заряд батареи */
   user_pref("dom.battery.enabled", false);
+ /* Запрещаем сайтам видеть информацию о модели видеокарты */
+  user_pref("webgl.enable-debug-renderer-info", false);
 
 
 
