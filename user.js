@@ -20,7 +20,7 @@
   user_pref("browser.newtabpage.activity-stream.section.highlights.includeDownloads", false); // [Избранное] Недавние загрузки
   user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmarks", false); // [Избранное] Закладки
   user_pref("browser.newtabpage.activity-stream.section.highlights.includeVisited", false); // [Избранное] Посещенные страницы
-  user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false); // [Избранное] Страницы, сохранённые в Pocket
+  user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false); // [Избранное] Страницы, сохраненные в Pocket
   user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false); // [Топ сайтов] Топ сайтов спонсоров
  /* Отключаем рекомендацию расширений и настроек
   * [SETTING] Основное > Просмотр сайтов > Рекомендовать <pref> при просмотре */
@@ -195,7 +195,7 @@
   * Когда вы переходите на сайт, например, с результатов гугла,
   * сайт может видеть, что вы перешли на сайт с https://www.google.com/
   ! Эти настройки вызывают проблемы на таких сайтах как vimeo, icloud, instagram
-  ! Подтвержено лично мной, что в помойке instagram перестают работать видосики */
+  ! Подтверждено лично мной, что в помойке instagram перестают работать видосики */
   user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
   user_pref("network.http.referer.XOriginPolicy", 2);
  /* Включаем отправку веб-сайтам сигнал «Не отслеживать»
@@ -330,13 +330,13 @@
    /* Отключаем предварительную выборку DNS
     * [1] https://developer.mozilla.org/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control */
     // user_pref("network.dns.disablePrefetch", true);
-    // user_pref("network.dns.disablePrefetchFromHTTPS", true); // [DEFAULT: true] // ! Задокументированно
+    // user_pref("network.dns.disablePrefetchFromHTTPS", true); // [DEFAULT: true] // ! Задокументировано
    /* Отключаем предиктор / предварительную выборку */
     // user_pref("network.predictor.enabled", false);
-    // user_pref("network.predictor.enable-prefetch", false); // [DEFAULT: false] // ! Задокументированно
+    // user_pref("network.predictor.enable-prefetch", false); // [DEFAULT: false] // ! Задокументировано
    /* Не применять «Аудит гиперссылок» (отслеживание кликов)
     * [1] https://www.bleepingcomputer.com/news/software/major-browsers-to-prevent-disabling-of-click-tracking-privacy-risk/ */
-    // user_pref("browser.send_pings", false); // [DEFAULT: false] // ! Задокументированно
+    // user_pref("browser.send_pings", false); // [DEFAULT: false] // ! Задокументировано
     // user_pref("browser.send_pings.require_same_host", true); // ! Удаленно в 87-beta
 
   /* FLASH */
