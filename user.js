@@ -220,6 +220,12 @@
   user_pref("security.mixed_content.block_display_content", true);
  /* Включаем блокировку незашифрованных запросов от Flash для предотвращения MitM атак */
   user_pref("security.mixed_content.block_object_subrequest", true);
+ /* Включаем применение Punycode для доменов для предотвращение IDN атак
+  * Например, злоумышленник отправляет вам URL-адрес,
+  * который выглядит так, как будто он принадлежит одному сайту,
+  * но фактические буквы являются символами на другом языке,
+  * а URL-адрес перенаправляет вас на фишинг сайт. */
+  user_pref("network.IDN_show_punycode", true);
 
 
 
