@@ -193,16 +193,18 @@
   user_pref("privacy.trackingprotection.socialtracking.enabled", true);
  /* Запрещаем отправлять referrer (источник перехода) сайтам
   * Когда вы переходите на сайт, например, с результатов гугла,
-  * сайт может видеть, что вы перешли на сайт с https://www.google.com/ */
-  user_pref("network.http.referer.XOriginPolicy", 2);
+  * сайт может видеть, что вы перешли на сайт с https://www.google.com/
+  ! Эти настройки вызывают проблемы на таких сайтах как vimeo, icloud, instagram
+  ! Подтвержено лично мной, что в помойке instagram перестают работать видосики */
   user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
+  user_pref("network.http.referer.XOriginPolicy", 2);
  /* Включаем отправку веб-сайтам сигнал «Не отслеживать»
   * Приватность > Отправлять веб-сайтам сигнал «Не отслеживать» */
   user_pref("privacy.donottrackheader.enabled", true);
  /* Включаем функцию "Контейнеры" без расширения */
   user_pref("privacy.userContext.ui.enabled", true);
   user_pref("privacy.userContext.enabled", true);
- /* Включаем First Party Isolation */
+ /* Включаем функцию First Party Isolation */
   user_pref("privacy.firstparty.isolate", true);
  /* Запрещаем сайтам видеть заряд батареи */
   user_pref("dom.battery.enabled", false);
