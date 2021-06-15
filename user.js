@@ -2,6 +2,9 @@
  /* Отключаем предупреждения на about:config */
   user_pref("general.warnOnAboutConfig", false); // XHTML version
   user_pref("browser.aboutConfig.showWarning", false); // HTML version
+ /* Включаем восстановление сессии
+  * [SETTING] Основное > Запуск > Восстанавливать предыдущую сессию*/
+  user_pref("browser.startup.page", 3);
  /* Отключаем проверку браузера по умолчанию
   * [SETTING] Основное > Запуск > Проверять, является ли Firefox браузером по умолчанию */
   user_pref("browser.shell.checkDefaultBrowser", false);
