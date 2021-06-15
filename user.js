@@ -69,9 +69,6 @@
 
 
 /* ОТЧЕТЫ */
- /* Отключаем метаданные расширений (описание дополнения)
-  * Вкладки с подробностями о расширении не будут иметь описания */ 
-  user_pref("extensions.getAddons.cache.enabled", false); 
  /* Отключаем обновления поисковых систем
   * [NOTE] Это не влияет на встроенные поисковые системы Mozilla или веб-расширения. */
   user_pref("browser.search.update", false);
@@ -153,13 +150,16 @@
   * [SETTING] Приватность > Защита > Предупреждать о нежелательных и редко загружаемых программах */
   user_pref("browser.safebrowsing.downloads.remote.block_potentially_unwanted", false);
   user_pref("browser.safebrowsing.downloads.remote.block_uncommon", false);
- /* Отключаем  "игнорировать это предупреждение" в предупреждениях SB
+ /* Отключаем "игнорировать это предупреждение" в предупреждениях SB
   * Если кликнуть, он обходит блокировку для этого сеанса. Это средство для администраторов, чтобы обеспечить соблюдение SB */
   user_pref("browser.safebrowsing.allowOverride", false);
 
 
 
 /* РАСШИРЕНИЯ */
+ /* Отключаем метаданные расширений (описание дополнения)
+  * Вкладки с подробностями о расширении не будут иметь описания */ 
+  user_pref("extensions.getAddons.cache.enabled", false);
  /* Отключаем Shield (система отзывов Firefox)
   * Shield - это система телеметрии (включая Heartbeat)
   * [1] https://wiki.mozilla.org/Firefox/Shield
