@@ -69,9 +69,6 @@
 
 
 /* ОТЧЕТЫ */
- /* Отключаем автоматическую установку расширений и обновлений тем  
- * [SETTING] about:addons>Расширения>Автоматически обновлять дополнения */
-  user_pref("extensions.update.autoUpdateDefault", false);
  /* Отключаем метаданные расширений (описание дополнения)
   * Вкладки с подробностями о расширении не будут иметь описания */ 
   user_pref("extensions.getAddons.cache.enabled", false); 
@@ -364,3 +361,7 @@
  // user_pref("privacy.resistFingerprinting", true);
  // user_pref("browser.urlbar.speculativeConnect.enabled", false);
  // user_pref("dom.vibrator.enabled", false);
+
+ /* Отключаем автоматическую установку расширений и обновлений тем  
+ * [SETTING] about:addons>Расширения>Автоматически обновлять дополнения */
+  // user_pref("extensions.update.autoUpdateDefault", false);
