@@ -51,9 +51,6 @@
 
 
 /* ПОИСК */
- /* Отключаем предустановленные поисковые говно-службы
-  * [SETTING] Поиск > Значки поисковых систем */
-  user_pref("browser.search.hiddenOneOffs", "OZON.ru,Price.ru,Поиск Mail.Ru");
  /* Включаем отображение подсказок в режиме инкогнито
   * [SETTING] Поиск > Отображать поисковые предложения в Приватных окнах */
   user_pref("browser.search.suggest.enabled.private", true);
@@ -365,3 +362,7 @@
  /* Отключаем автоматическую установку расширений и обновлений тем  
  * [SETTING] about:addons>Расширения>Автоматически обновлять дополнения */
   // user_pref("extensions.update.autoUpdateDefault", false);
+
+ /* Отключаем предустановленные поисковые говно-службы
+  * [SETTING] Поиск > Значки поисковых систем */
+  // user_pref("browser.search.hiddenOneOffs", "OZON.ru,Price.ru,Поиск Mail.Ru");
