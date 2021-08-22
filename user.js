@@ -1,6 +1,5 @@
 /* ЗАПУСК */
  /* Отключаем предупреждения на about:config */
-  user_pref("general.warnOnAboutConfig", false); // XHTML version
   user_pref("browser.aboutConfig.showWarning", false); // HTML version
  /* Включаем восстановление сессии
   * [SETTING] Основное > Запуск > Восстанавливать предыдущую сессию */
@@ -369,3 +368,5 @@
 
  /* Включаем блокировку незашифрованных запросов от Flash для предотвращения MitM атак */
   // user_pref("security.mixed_content.block_object_subrequest", true); ! Удалено из Firefox
+
+ // user_pref("general.warnOnAboutConfig", false); // XHTML version
