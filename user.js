@@ -205,8 +205,6 @@
   user_pref("privacy.userContext.enabled", true);
  /* Включаем функцию First Party Isolation */
   user_pref("privacy.firstparty.isolate", true);
- /* Запрещаем сайтам видеть заряд батареи */
-  user_pref("dom.battery.enabled", false);
  /* Запрещаем сайтам видеть информацию о модели видеокарты */
   user_pref("webgl.enable-debug-renderer-info", false);
 
@@ -370,3 +368,6 @@
   // user_pref("security.mixed_content.block_object_subrequest", true); ! Удалено из Firefox
 
  // user_pref("general.warnOnAboutConfig", false); // XHTML version
+
+ /* Запрещаем сайтам видеть заряд батареи */
+  // user_pref("dom.battery.enabled", false); ! Удалено из Firefox
