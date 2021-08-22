@@ -265,6 +265,8 @@
   user_pref("ui.systemUsesDarkTheme", 1);
  /* Включаем функцию "Подсветить все" в CTRL+F */
   user_pref("findbar.highlightAll", true);
+ /* TODO: Сделать описание */
+  user_pref("svg.context-properties.content.enabled", true);
 
 
 
