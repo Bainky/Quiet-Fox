@@ -197,9 +197,6 @@
   ! Подтверждено лично мной, что в таких помойках, как instagram и tiktok перестают работать видосики */
   user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
   user_pref("network.http.referer.XOriginPolicy", 2);
- /* Включаем отправку веб-сайтам сигнал «Не отслеживать»
-  * Приватность > Отправлять веб-сайтам сигнал «Не отслеживать» */
-  user_pref("privacy.donottrackheader.enabled", true);
  /* Включаем функцию "Контейнеры" без расширения */
   user_pref("privacy.userContext.ui.enabled", true);
   user_pref("privacy.userContext.enabled", true);
@@ -371,3 +368,7 @@
 
  /* Запрещаем сайтам видеть заряд батареи */
   // user_pref("dom.battery.enabled", false); ! Удалено из Firefox
+
+ /* Включаем отправку веб-сайтам сигнал «Не отслеживать»
+  * Приватность > Отправлять веб-сайтам сигнал «Не отслеживать» */
+  // user_pref("privacy.donottrackheader.enabled", true); ! Бесполезно
