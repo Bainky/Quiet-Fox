@@ -252,7 +252,6 @@
  /* Включаем темную тему */
   user_pref("devtools.theme", "dark");
   user_pref("reader.color_scheme", "dark");
-  user_pref("ui.systemUsesDarkTheme", 1);
  /* Включаем функцию "Подсветить все" в CTRL+F */
   user_pref("findbar.highlightAll", true);
  /* TODO: Сделать описание */
@@ -373,3 +372,5 @@
 
  /* Включаем блокировку небезопасного контента на https-страницах */
   // user_pref("security.mixed_content.block_active_content", true); // [DEFAULT: true]
+
+  // user_pref("ui.systemUsesDarkTheme", 1);
