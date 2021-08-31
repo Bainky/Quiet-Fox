@@ -208,8 +208,6 @@
 
 
 /* ЗАЩИТА */
- /* Включаем блокировку небезопасного контента на https-страницах */
-  user_pref("security.mixed_content.block_active_content", true); // [DEFAULT: true]
  /* Включаем блокировку небезопасного контента (например, изображения) на https-страницах */
   user_pref("security.mixed_content.block_display_content", true);
  /* Включаем применение Punycode для доменов для предотвращение IDN атак
@@ -372,3 +370,6 @@
  /* Включаем отправку веб-сайтам сигнал «Не отслеживать»
   * Приватность > Отправлять веб-сайтам сигнал «Не отслеживать» */
   // user_pref("privacy.donottrackheader.enabled", true); ! Бесполезно
+
+ /* Включаем блокировку небезопасного контента на https-страницах */
+  // user_pref("security.mixed_content.block_active_content", true); // [DEFAULT: true]
