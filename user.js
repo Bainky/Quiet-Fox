@@ -169,8 +169,6 @@
   user_pref("identity.fxaccounts.enabled", false);
  /* Отключаем встроенное расширение Pocket */
   user_pref("extensions.pocket.enabled", false);
- /* Отключаем встроенное расширение Screenshots */
-  user_pref("extensions.screenshots.disabled", true);
  /* Отключаем встроенное расширение Web Compatibility Reporter
   * Добавляет кнопку «Сообщить о проблеме на сайте» для отправки данных в Mozilla */
   user_pref("extensions.webcompat-reporter.enabled", false); // [DEFAULT: false]
@@ -374,3 +372,6 @@
   // user_pref("security.mixed_content.block_active_content", true); // [DEFAULT: true]
 
   // user_pref("ui.systemUsesDarkTheme", 1);
+
+ /* Отключаем встроенное расширение Screenshots */
+  // user_pref("extensions.screenshots.disabled", true);
