@@ -175,6 +175,8 @@
  /* Отключаем ограничения расширений для доменов Mozilla */
   user_pref("privacy.resistFingerprinting.block_mozAddonManager", true); // [HIDDEN PREF]
   user_pref("extensions.webextensions.restrictedDomains", "");
+ /* Отключаем рекламу Mozilla VPN на новых вкладках */
+  user_pref("browser.privatebrowsing.vpnpromourl", "");
 
 
 
