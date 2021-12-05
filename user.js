@@ -1,128 +1,128 @@
 /* ЗАПУСК */
  /* Отключаем предупреждения на about:config */
-  user_pref("browser.aboutConfig.showWarning", false); // HTML version
+user_pref("browser.aboutConfig.showWarning", false); // HTML version
  /* Включаем восстановление сессии
   * [SETTING] Основное > Запуск > Восстанавливать предыдущую сессию */
-  user_pref("browser.startup.page", 3);
+user_pref("browser.startup.page", 3);
  /* Включаем предупреждение при выходе из браузера
   * [SETTING] Основное > Запуск > Предупреждать при выходе из браузера */
-  user_pref("browser.sessionstore.warnOnQuit", true);
+user_pref("browser.sessionstore.warnOnQuit", true);
  /* Отключаем проверку браузера по умолчанию
   * [SETTING] Основное > Запуск > Проверять, является ли Firefox браузером по умолчанию */
-  user_pref("browser.shell.checkDefaultBrowser", false);
+user_pref("browser.shell.checkDefaultBrowser", false);
  /* Отключаем использование рекомендуемых настроек по умолчанию
   * [SETTING] Основное > Производительность > Использовать рекомендуемые настройки */
-  user_pref("browser.preferences.defaultPerformanceSettings.enabled", false);
+user_pref("browser.preferences.defaultPerformanceSettings.enabled", false);
  /* Отключаем телеметрию ленты активности */
-  user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
-  user_pref("browser.newtabpage.activity-stream.telemetry", false);
+user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
+user_pref("browser.newtabpage.activity-stream.telemetry", false);
  /* Отключаем новости, спонсируемый контент и отображение элементов на домашней странице
   * [SETTING] Начало > Домашняя страница Firefox */
-  user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false); // Избранное
-  user_pref("browser.newtabpage.activity-stream.feeds.topsites", false); // Топ сайтов
-  user_pref("browser.newtabpage.activity-stream.feeds.snippets", false); // Заметки
+user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false); // Избранное
+user_pref("browser.newtabpage.activity-stream.feeds.topsites", false); // Топ сайтов
+user_pref("browser.newtabpage.activity-stream.feeds.snippets", false); // Заметки
  /* Отключаем отображение элементов на домашней странице браузера  */
-  user_pref("browser.newtabpage.activity-stream.section.highlights.includeDownloads", false); // [Избранное] Недавние загрузки
-  user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmarks", false); // [Избранное] Закладки
-  user_pref("browser.newtabpage.activity-stream.section.highlights.includeVisited", false); // [Избранное] Посещенные страницы
-  user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false); // [Избранное] Страницы, сохраненные в Pocket
-  user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false); // [Топ сайтов] Топ сайтов спонсоров
+user_pref("browser.newtabpage.activity-stream.section.highlights.includeDownloads", false); // [Избранное] Недавние загрузки
+user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmarks", false); // [Избранное] Закладки
+user_pref("browser.newtabpage.activity-stream.section.highlights.includeVisited", false); // [Избранное] Посещенные страницы
+user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false); // [Избранное] Страницы, сохраненные в Pocket
+user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false); // [Топ сайтов] Топ сайтов спонсоров
  /* Отключаем рекомендацию расширений и настроек
   * [SETTING] Основное > Просмотр сайтов > Рекомендовать <pref> при просмотре */
-  user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false); // Функции
-  user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false); // Расширения
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false); // Функции
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false); // Расширения
  /* Отключаем новости на главной странице и спонсируемый контент */
-  user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);
-  user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
-  user_pref("browser.newtabpage.activity-stream.showSponsored", false);
+user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
+user_pref("browser.newtabpage.activity-stream.showSponsored", false);
  /* Чистим рекламные мусорные вкладки (типа Facebook, Youtube и т.д)
   * [NOTE] Это не мешает вам добавлять свои сайты */
-  user_pref("browser.newtabpage.activity-stream.default.sites", "");
+user_pref("browser.newtabpage.activity-stream.default.sites", "");
  /* Отключаем ненужные баннеры на about:protections (Статистика) */
-  user_pref("browser.contentblocking.report.lockwise.enabled", false); // Firefox Lockwise 
-  user_pref("browser.contentblocking.report.monitor.enabled", false); // Firefox Monitor
-  user_pref("browser.contentblocking.report.show_mobile_app", false); // Firefox Mobile
-  user_pref("browser.contentblocking.report.vpn.enabled", false); // Firefox VPN
+user_pref("browser.contentblocking.report.lockwise.enabled", false); // Firefox Lockwise 
+user_pref("browser.contentblocking.report.monitor.enabled", false); // Firefox Monitor
+user_pref("browser.contentblocking.report.show_mobile_app", false); // Firefox Mobile
+user_pref("browser.contentblocking.report.vpn.enabled", false); // Firefox VPN
  /* Всегда выдавать запрос на сохранение файлов
   * [SETTING] Основное > Загрузки > Выдавать запрос на сохранение файлов */
-  user_pref("browser.download.useDownloadDir", false);
+user_pref("browser.download.useDownloadDir", false);
 
 
 
 /* ПОИСК */
  /* Включаем отображение подсказок в режиме инкогнито
   * [SETTING] Поиск > Отображать поисковые предложения в Приватных окнах */
-  user_pref("browser.search.suggest.enabled.private", true);
+user_pref("browser.search.suggest.enabled.private", true);
  /* Отключаем возможность поиска среди закладок и истории */
-  user_pref("browser.urlbar.shortcuts.bookmarks", false);
-  user_pref("browser.urlbar.shortcuts.history", false);
-  user_pref("browser.urlbar.shortcuts.tabs", false);
+user_pref("browser.urlbar.shortcuts.bookmarks", false);
+user_pref("browser.urlbar.shortcuts.history", false);
+user_pref("browser.urlbar.shortcuts.tabs", false);
  /* Декодировать URL, содержащий UTF8-символы */
-  user_pref("browser.urlbar.decodeURLsOnCopy", true);
+user_pref("browser.urlbar.decodeURLsOnCopy", true);
  /* Всегда отображать протокол на http сайтах */
-  user_pref("browser.urlbar.trimURLs", false);
+user_pref("browser.urlbar.trimURLs", false);
 
 
 
 /* ОТЧЕТЫ */
  /* Отключаем обновления поисковых систем
   * [NOTE] Это не влияет на встроенные поисковые системы Mozilla или веб-расширения. */
-  user_pref("browser.search.update", false);
+user_pref("browser.search.update", false);
  /* Отключаем панель рекомендуемых расширений на about:addons (Использует Google Analytics) */
-  user_pref("extensions.getAddons.showPane", false); // [HIDDEN PREF]
+user_pref("extensions.getAddons.showPane", false); // [HIDDEN PREF]
  /* Отключаем рекомендации расширений и тем на на about:addons */
-  user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
+user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
  /* Отключаем предложение "Пожаловаться на это расширение" при удалении */
-  user_pref("extensions.abuseReport.enabled", false);
+user_pref("extensions.abuseReport.enabled", false);
 
 
 
 /* ТЕЛЕМЕТРИЯ */
  /* Отключаем телеметрию */
-  user_pref("toolkit.telemetry.unified", false);
-  user_pref("toolkit.telemetry.enabled", false);
-  user_pref("toolkit.telemetry.server", "data:,");
-  user_pref("toolkit.telemetry.archive.enabled", false);
-  user_pref("toolkit.telemetry.newProfilePing.enabled", false);
-  user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
-  user_pref("toolkit.telemetry.updatePing.enabled", false);
-  user_pref("toolkit.telemetry.bhrPing.enabled", false);
-  user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
+user_pref("toolkit.telemetry.unified", false);
+user_pref("toolkit.telemetry.enabled", false);
+user_pref("toolkit.telemetry.server", "data:,");
+user_pref("toolkit.telemetry.archive.enabled", false);
+user_pref("toolkit.telemetry.newProfilePing.enabled", false);
+user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
+user_pref("toolkit.telemetry.updatePing.enabled", false);
+user_pref("toolkit.telemetry.bhrPing.enabled", false);
+user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
  /* Отключаем покрытие телеметрии
   * [1] https://blog.mozilla.org/data/2018/08/20/effectively-measuring-search-in-firefox/ */
-  user_pref("toolkit.telemetry.coverage.opt-out", true); // [HIDDEN PREF]
-  user_pref("toolkit.coverage.opt-out", true); // [HIDDEN PREF]
-  user_pref("toolkit.coverage.endpoint.base", "");
+user_pref("toolkit.telemetry.coverage.opt-out", true); // [HIDDEN PREF]
+user_pref("toolkit.coverage.opt-out", true); // [HIDDEN PREF]
+user_pref("toolkit.coverage.endpoint.base", "");
  /* Отключаем отправку отчетов о состоянии
   * [SETTING] Приватность > Сбор и использование данных > Отправка технических данных*/
-  user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("datareporting.healthreport.uploadEnabled", false);
  /* Отключаем отправку данных, главный выключатель 
   * Если этот параметр отключен, политика не отображается.
   * [1] https://bugzilla.mozilla.org/1195552 */
-  user_pref("datareporting.policy.dataSubmissionEnabled", false);
+user_pref("datareporting.policy.dataSubmissionEnabled", false);
  /* 0342: Отключаем проведение исследований
   * [SETTING] Приватность > Сбор и использование данных > Разрешить проводить исследования */
-  user_pref("app.shield.optoutstudies.enabled", false);
+user_pref("app.shield.optoutstudies.enabled", false);
  /* 0343: Отключаем персональные рекомендации расширений на about:addons и AMO
   * [NOTE] Этот параметр не действует, когда отчеты о работоспособности отключены.
   * [SETTING] Приватность > Сбор и использование данных > Разрешить давать рекомендации расширений
   * [1] https://support.mozilla.org/kb/personalized-extension-recommendations */
-  user_pref("browser.discovery.enabled", false);
+user_pref("browser.discovery.enabled", false);
  /* Отключаем отправку отчетов при падении */
-  user_pref("breakpad.reportURL", "");
-  user_pref("browser.tabs.crashReporting.sendReport", false);
-  user_pref("browser.crashReports.unsubmittedCheck.enabled", false); // [DEFAULT: false]
+user_pref("breakpad.reportURL", "");
+user_pref("browser.tabs.crashReporting.sendReport", false);
+user_pref("browser.crashReports.unsubmittedCheck.enabled", false); // [DEFAULT: false]
  /* Отключаем отправку отложенных отчетов о сбоях
   * [SETTING] Приватность > Сбор и использование данных > Разрешить отправлять накопившиеся сообщения о падении */
-  user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false); // [DEFAULT: false]
+user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false); // [DEFAULT: false]
  /* 0390: Отключаем обнаружение Captive Portal
   * [1] https://www.eff.org/deeplinks/2017/08/how-captive-portals-interfere-wireless-security-and-privacy
   * [2] https://wiki.mozilla.org/Necko/CaptivePortal */
-  user_pref("captivedetect.canonicalURL", "");
-  user_pref("network.captive-portal-service.enabled", false);
+user_pref("captivedetect.canonicalURL", "");
+user_pref("network.captive-portal-service.enabled", false);
  /* 0391: Отключаем проверку сетевого подключения
   * [1] https://bugzilla.mozilla.org/1460537 */
-  user_pref("network.connectivity-service.enabled", false);
+user_pref("network.connectivity-service.enabled", false);
 
 
 
@@ -130,163 +130,163 @@
  /* Отключаем безопасный серфинг
   * [WARNING] Делайте это на свой страх и риск! Это главные переключатели.
   * [SETTING] Приватность > Защита > Блокировать опасное и обманывающее содержимое */
-  user_pref("browser.safebrowsing.malware.enabled", false);
-  user_pref("browser.safebrowsing.phishing.enabled", false);
+user_pref("browser.safebrowsing.malware.enabled", false);
+user_pref("browser.safebrowsing.phishing.enabled", false);
  /* Отключаем проверку загрузок
   * Это главный переключатель для safebrowsing.downloads
   * [SETTING] Приватность > Защита > Блокировать опасные загрузки */
-  user_pref("browser.safebrowsing.downloads.enabled", false);
+user_pref("browser.safebrowsing.downloads.enabled", false);
  /* Отключаем проверку загрузок
   * Чтобы проверить безопасность определенных исполняемых файлов, браузер отправляет информацию
   * о файле, включая имя, дату, размер и криптографический хэш в Google
   * Служба безопасного просмотра уже определяет, следует ли блокировать файл. */
-  user_pref("browser.safebrowsing.downloads.remote.enabled", false);
-  user_pref("browser.safebrowsing.downloads.remote.url", "");
+user_pref("browser.safebrowsing.downloads.remote.enabled", false);
+user_pref("browser.safebrowsing.downloads.remote.url", "");
  /* Отключаем проверку на наличие нежелательного ПО
   * [SETTING] Приватность > Защита > Предупреждать о нежелательных и редко загружаемых программах */
-  user_pref("browser.safebrowsing.downloads.remote.block_potentially_unwanted", false);
-  user_pref("browser.safebrowsing.downloads.remote.block_uncommon", false);
+user_pref("browser.safebrowsing.downloads.remote.block_potentially_unwanted", false);
+user_pref("browser.safebrowsing.downloads.remote.block_uncommon", false);
  /* Отключаем "игнорировать это предупреждение" в предупреждениях SB
   * Если кликнуть, он обходит блокировку для этого сеанса. Это средство для администраторов, чтобы обеспечить соблюдение SB */
-  user_pref("browser.safebrowsing.allowOverride", false);
+user_pref("browser.safebrowsing.allowOverride", false);
 
 
 
 /* РАСШИРЕНИЯ */
  /* Отключаем метаданные расширений (описание дополнения)
   * Вкладки с подробностями о расширении не будут иметь описания */ 
-  user_pref("extensions.getAddons.cache.enabled", false);
+user_pref("extensions.getAddons.cache.enabled", false);
  /* Отключаем Shield (система отзывов Firefox)
   * Shield - это система телеметрии (включая Heartbeat)
   * [1] https://wiki.mozilla.org/Firefox/Shield
   * [2] https://github.com/mozilla/normandy */
-  user_pref("app.normandy.enabled", false);
-  user_pref("app.normandy.api_url", "");
+user_pref("app.normandy.enabled", false);
+user_pref("app.normandy.api_url", "");
  /* Отключаем телеметрию PingCentre
   * Может быть заблокирован 'datareporting.healthreport.uploadEnabled' */
-  user_pref("browser.ping-centre.telemetry", false);
+user_pref("browser.ping-centre.telemetry", false);
  /* Отключаем Firefox-Аккаунт & Синхронизацию */
-  user_pref("identity.fxaccounts.enabled", false);
+user_pref("identity.fxaccounts.enabled", false);
  /* Отключаем встроенное расширение Pocket */
-  user_pref("extensions.pocket.enabled", false);
+user_pref("extensions.pocket.enabled", false);
  /* Отключаем встроенное расширение Web Compatibility Reporter
   * Добавляет кнопку «Сообщить о проблеме на сайте» для отправки данных в Mozilla */
-  user_pref("extensions.webcompat-reporter.enabled", false); // [DEFAULT: false]
+user_pref("extensions.webcompat-reporter.enabled", false); // [DEFAULT: false]
  /* Отключаем ограничения расширений для доменов Mozilla */
-  user_pref("privacy.resistFingerprinting.block_mozAddonManager", true); // [HIDDEN PREF]
-  user_pref("extensions.webextensions.restrictedDomains", "");
+user_pref("privacy.resistFingerprinting.block_mozAddonManager", true); // [HIDDEN PREF]
+user_pref("extensions.webextensions.restrictedDomains", "");
  /* Отключаем рекламу Mozilla VPN на новых вкладках */
-  user_pref("browser.privatebrowsing.vpnpromourl", "");
+user_pref("browser.privatebrowsing.vpnpromourl", "");
 
 
 
 /* ПРИВАТНОСТЬ */
  /* Включаем блокировку сторонних файлов Cookie
   * [SETTING] Приватность > Защита от отслеживания > Все сторонние куки */
-  user_pref("browser.contentblocking.category", "custom");
-  user_pref("network.cookie.cookieBehavior", 1);
+user_pref("browser.contentblocking.category", "custom");
+user_pref("network.cookie.cookieBehavior", 1);
  /* Разрешаем работу Enhanced Tracking Protection во всех окнах
   * [SETTING] Приватность > Защита от отслеживания > Во всех окнах */
-  user_pref("privacy.trackingprotection.enabled", true);
+user_pref("privacy.trackingprotection.enabled", true);
  /* Включаем блокировку трекеров социальных сетей в ETP */
-  user_pref("privacy.trackingprotection.socialtracking.enabled", true);
+user_pref("privacy.trackingprotection.socialtracking.enabled", true);
  /* Запрещаем отправлять referrer (источник перехода) сайтам
   * Когда вы переходите на сайт, например, с результатов гугла,
   * сайт может видеть, что вы перешли на сайт с https://www.google.com/
   ! Эти настройки вызывают проблемы на таких сайтах как vimeo, icloud, instagram
   ! Подтверждено лично мной, что в таких помойках, как instagram и tiktok перестают работать видосики */
-  user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
-  user_pref("network.http.referer.XOriginPolicy", 2);
+user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
+user_pref("network.http.referer.XOriginPolicy", 2);
  /* Включаем функцию "Контейнеры" без расширения */
-  user_pref("privacy.userContext.ui.enabled", true);
-  user_pref("privacy.userContext.enabled", true);
+user_pref("privacy.userContext.ui.enabled", true);
+user_pref("privacy.userContext.enabled", true);
  /* Включаем функцию First Party Isolation */
-  user_pref("privacy.firstparty.isolate", true);
+user_pref("privacy.firstparty.isolate", true);
  /* Запрещаем сайтам видеть информацию о модели видеокарты */
-  user_pref("webgl.enable-debug-renderer-info", false);
+user_pref("webgl.enable-debug-renderer-info", false);
 
 
 
 /* ЗАЩИТА */
  /* Включаем блокировку небезопасного контента (например, изображения) на https-страницах */
-  user_pref("security.mixed_content.block_display_content", true);
+user_pref("security.mixed_content.block_display_content", true);
  /* Включаем применение Punycode для доменов для предотвращение IDN атак
   * Например, злоумышленник отправляет вам URL-адрес,
   * который выглядит так, как будто он принадлежит одному сайту,
   * но фактические буквы являются символами на другом языке,
   * а URL-адрес перенаправляет вас на фишинг сайт. */
-  user_pref("network.IDN_show_punycode", true);
+user_pref("network.IDN_show_punycode", true);
 
 
 
 /* РАЗНОЕ */
  /* Отключаем асинхронные запросы, используемые для аналитики */
-  user_pref("beacon.enabled", false);
+user_pref("beacon.enabled", false);
  /* Удаляем специальные разрешения для доменов Mozilla [FF35 +]
   * [1] resource://app/defaults/permissions ***/
-  user_pref("permissions.manager.defaultsUrl", "");
+user_pref("permissions.manager.defaultsUrl", "");
  /* Удаляем белый список веб-каналов */ 
-  user_pref("webchannel.allowObject.urlWhitelist", "");
+user_pref("webchannel.allowObject.urlWhitelist", "");
 
 
 
 /* ПАРОЛИ */
  /* Отключаем сохранение паролей в браузере 
   * [SETTING] Приватность > Логины и пароли */
-  user_pref("signon.rememberSignons", false); // Запрашивать сохранение логинов и паролей для веб-сайтов
-  user_pref("signon.generation.enabled", false); // Предлагать и генерировать надежные пароли
-  user_pref("signon.autofillForms", false); // Автозаполнять логины и пароли
+user_pref("signon.rememberSignons", false); // Запрашивать сохранение логинов и паролей для веб-сайтов
+user_pref("signon.generation.enabled", false); // Предлагать и генерировать надежные пароли
+user_pref("signon.autofillForms", false); // Автозаполнять логины и пароли
 
 
 
 /* ИНТЕРФЕЙС */
  /* Добавляем кнопку "Включить/Отключить звук" в режиме "Картинка в картинке" */
-  user_pref("media.videocontrols.picture-in-picture.audio-toggle.enabled", true);
+user_pref("media.videocontrols.picture-in-picture.audio-toggle.enabled", true);
  /* Включаем отображение расширенной информации на страницах предупреждений */
-  user_pref("browser.xul.error_pages.expert_bad_cert", true);
+user_pref("browser.xul.error_pages.expert_bad_cert", true);
  /* Отключаем предупреждение при включении полноэкранного режима*/
-  user_pref("full-screen-api.warning.timeout", 0);
-  user_pref("full-screen-api.warning.delay", 0);
+user_pref("full-screen-api.warning.timeout", 0);
+user_pref("full-screen-api.warning.delay", 0);
  /* Отключаем клавишу Alt, переключающую меню */
-  user_pref("ui.key.menuAccessKey", 0);
+user_pref("ui.key.menuAccessKey", 0);
  /* Включаем темную тему */
-  user_pref("devtools.theme", "dark");
-  user_pref("reader.color_scheme", "dark");
+user_pref("devtools.theme", "dark");
+user_pref("reader.color_scheme", "dark");
  /* Включаем функцию "Подсветить все" в CTRL+F */
-  user_pref("findbar.highlightAll", true);
+user_pref("findbar.highlightAll", true);
  /* TODO: Сделать описание */
-  user_pref("svg.context-properties.content.enabled", true);
+user_pref("svg.context-properties.content.enabled", true);
 
 
 
 /* ПРОКРУТКА */
  /* Настройки плавного скролла
   * [1] https://habr.com/ru/post/548064/ */
-  user_pref("general.smoothScroll.currentVelocityWeighting", "0");
-  user_pref("general.smoothScroll.durationToIntervalRatio", 1000);
-  user_pref("general.smoothScroll.lines.durationMaxMS", 150);
-  user_pref("general.smoothScroll.lines.durationMinMS", 0);
-  user_pref("general.smoothScroll.mouseWheel.durationMaxMS", 150);
-  user_pref("general.smoothScroll.mouseWheel.durationMinMS", 0);
-  user_pref("general.smoothScroll.mouseWheel.migrationPercent", 0);
-  user_pref("general.smoothScroll.msdPhysics.continuousMotionMaxDeltaMS", 250);
-  user_pref("general.smoothScroll.msdPhysics.enabled", true);
-  user_pref("general.smoothScroll.msdPhysics.motionBeginSpringConstant", 450);
-  user_pref("general.smoothScroll.msdPhysics.regularSpringConstant", 450);
-  user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaMS", 50);
-  user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio;0", 4);
-  user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant", 5000);
-  user_pref("general.smoothScroll.other", true);
-  user_pref("general.smoothScroll.other.durationMaxMS", 150);
-  user_pref("general.smoothScroll.other.durationMinMS", 0);
-  user_pref("general.smoothScroll.pages.durationMaxMS", 150);
-  user_pref("general.smoothScroll.pages.durationMinMS", 0);
-  user_pref("general.smoothScroll.pixels", true);
-  user_pref("general.smoothScroll.pixels.durationMaxMS", 150);
-  user_pref("general.smoothScroll.pixels.durationMinMS", 0);
-  user_pref("general.smoothScroll.scrollbars.durationMaxMS", 600);
-  user_pref("general.smoothScroll.scrollbars.durationMinMS", 0);
-  user_pref("general.smoothScroll.stopDecelerationWeighting", "0.2");
+user_pref("general.smoothScroll.currentVelocityWeighting", "0");
+user_pref("general.smoothScroll.durationToIntervalRatio", 1000);
+user_pref("general.smoothScroll.lines.durationMaxMS", 150);
+user_pref("general.smoothScroll.lines.durationMinMS", 0);
+user_pref("general.smoothScroll.mouseWheel.durationMaxMS", 150);
+user_pref("general.smoothScroll.mouseWheel.durationMinMS", 0);
+user_pref("general.smoothScroll.mouseWheel.migrationPercent", 0);
+user_pref("general.smoothScroll.msdPhysics.continuousMotionMaxDeltaMS", 250);
+user_pref("general.smoothScroll.msdPhysics.enabled", true);
+user_pref("general.smoothScroll.msdPhysics.motionBeginSpringConstant", 450);
+user_pref("general.smoothScroll.msdPhysics.regularSpringConstant", 450);
+user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaMS", 50);
+user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio;0", 4);
+user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant", 5000);
+user_pref("general.smoothScroll.other", true);
+user_pref("general.smoothScroll.other.durationMaxMS", 150);
+user_pref("general.smoothScroll.other.durationMinMS", 0);
+user_pref("general.smoothScroll.pages.durationMaxMS", 150);
+user_pref("general.smoothScroll.pages.durationMinMS", 0);
+user_pref("general.smoothScroll.pixels", true);
+user_pref("general.smoothScroll.pixels.durationMaxMS", 150);
+user_pref("general.smoothScroll.pixels.durationMinMS", 0);
+user_pref("general.smoothScroll.scrollbars.durationMaxMS", 600);
+user_pref("general.smoothScroll.scrollbars.durationMinMS", 0);
+user_pref("general.smoothScroll.stopDecelerationWeighting", "0.2");
 
 
 
