@@ -93,6 +93,7 @@ user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
 user_pref("toolkit.telemetry.coverage.opt-out", true); // [HIDDEN PREF]
 user_pref("toolkit.coverage.opt-out", true); // [HIDDEN PREF]
 user_pref("toolkit.coverage.endpoint.base", "");
+user_pref("browser.ping-centre.telemetry", false);
  /* Отключаем отправку отчетов о состоянии
   * [SETTING] Приватность > Сбор и использование данных > Отправка технических данных*/
 user_pref("datareporting.healthreport.uploadEnabled", false);
