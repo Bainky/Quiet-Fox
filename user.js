@@ -50,6 +50,9 @@ user_pref("browser.download.useDownloadDir", false);
 
 
 /* ПОИСК */
+ /* Отключаем подсказки в адресной строке*/
+user_pref("browser.urlbar.suggest.quicksuggest.nonsponsored", false);
+user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
  /* Включаем отображение подсказок в режиме инкогнито
   * [SETTING] Поиск > Отображать поисковые предложения в Приватных окнах */
 user_pref("browser.search.suggest.enabled.private", true);
