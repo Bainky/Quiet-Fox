@@ -10,9 +10,6 @@ user_pref("browser.sessionstore.warnOnQuit", true);
  /* Отключаем проверку браузера по умолчанию
   * [SETTING] Основное > Запуск > Проверять, является ли Firefox браузером по умолчанию */
 user_pref("browser.shell.checkDefaultBrowser", false);
- /* Отключаем использование рекомендуемых настроек по умолчанию
-  * [SETTING] Основное > Производительность > Использовать рекомендуемые настройки */
-user_pref("browser.preferences.defaultPerformanceSettings.enabled", false);
  /* Отключаем телеметрию ленты активности */
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
@@ -60,17 +57,12 @@ user_pref("browser.search.suggest.enabled.private", true);
 user_pref("browser.urlbar.shortcuts.bookmarks", false);
 user_pref("browser.urlbar.shortcuts.history", false);
 user_pref("browser.urlbar.shortcuts.tabs", false);
- /* Декодировать URL, содержащий UTF8-символы */
-user_pref("browser.urlbar.decodeURLsOnCopy", true);
  /* Всегда отображать протокол на http сайтах */
 user_pref("browser.urlbar.trimURLs", false);
 
 
 
 /* ОТЧЕТЫ */
- /* Отключаем обновления поисковых систем
-  * [NOTE] Это не влияет на встроенные поисковые системы Mozilla или веб-расширения. */
-user_pref("browser.search.update", false);
  /* Отключаем панель рекомендуемых расширений на about:addons (Использует Google Analytics) */
 user_pref("extensions.getAddons.showPane", false); // [HIDDEN PREF]
  /* Отключаем рекомендации расширений и тем на на about:addons */
@@ -115,7 +107,6 @@ user_pref("browser.discovery.enabled", false);
  /* Отключаем отправку отчетов при падении */
 user_pref("breakpad.reportURL", "");
 user_pref("browser.tabs.crashReporting.sendReport", false);
-user_pref("browser.crashReports.unsubmittedCheck.enabled", false); // [DEFAULT: false]
  /* Отключаем отправку отложенных отчетов о сбоях
   * [SETTING] Приватность > Сбор и использование данных > Разрешить отправлять накопившиеся сообщения о падении */
 user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false); // [DEFAULT: false]
@@ -131,9 +122,6 @@ user_pref("network.connectivity-service.enabled", false);
 
 
 /* РАСШИРЕНИЯ */
- /* Отключаем метаданные расширений (описание дополнения)
-  * Вкладки с подробностями о расширении не будут иметь описания */ 
-user_pref("extensions.getAddons.cache.enabled", false);
  /* Отключаем Shield (система отзывов Firefox)
   * Shield - это система телеметрии (включая Heartbeat)
   * [1] https://wiki.mozilla.org/Firefox/Shield
@@ -152,7 +140,6 @@ user_pref("extensions.pocket.enabled", false);
 user_pref("extensions.webcompat-reporter.enabled", false); // [DEFAULT: false]
  /* Отключаем ограничения расширений для доменов Mozilla */
 user_pref("privacy.resistFingerprinting.block_mozAddonManager", true); // [HIDDEN PREF]
-user_pref("extensions.webextensions.restrictedDomains", "");
  /* Отключаем рекламу Mozilla VPN на новых вкладках */
 user_pref("browser.privatebrowsing.vpnpromourl", "");
 
@@ -161,13 +148,7 @@ user_pref("browser.privatebrowsing.vpnpromourl", "");
 /* ПРИВАТНОСТЬ */
  /* Включаем блокировку сторонних файлов Cookie
   * [SETTING] Приватность > Защита от отслеживания > Все сторонние куки */
-user_pref("browser.contentblocking.category", "custom");
-user_pref("network.cookie.cookieBehavior", 1);
- /* Разрешаем работу Enhanced Tracking Protection во всех окнах
-  * [SETTING] Приватность > Защита от отслеживания > Во всех окнах */
-user_pref("privacy.trackingprotection.enabled", true);
- /* Включаем блокировку трекеров социальных сетей в ETP */
-user_pref("privacy.trackingprotection.socialtracking.enabled", true);
+user_pref("browser.contentblocking.category", "strict");
  /* Запрещаем отправлять referrer (источник перехода) сайтам
   * Когда вы переходите на сайт, например, с результатов гугла,
   * сайт может видеть, что вы перешли на сайт с https://www.google.com/
@@ -178,10 +159,6 @@ user_pref("network.http.referer.XOriginPolicy", 2);
  /* Включаем функцию "Контейнеры" без расширения */
 user_pref("privacy.userContext.ui.enabled", true);
 user_pref("privacy.userContext.enabled", true);
- /* Включаем функцию First Party Isolation */
-user_pref("privacy.firstparty.isolate", true);
- /* Запрещаем сайтам видеть информацию о модели видеокарты */
-user_pref("webgl.enable-debug-renderer-info", false);
 
 
 
@@ -232,8 +209,6 @@ user_pref("devtools.theme", "dark");
 user_pref("reader.color_scheme", "dark");
  /* Включаем функцию "Подсветить все" в CTRL+F */
 user_pref("findbar.highlightAll", true);
- /* TODO: Сделать описание */
-user_pref("svg.context-properties.content.enabled", true);
 
 
 
@@ -379,3 +354,38 @@ user_pref("general.smoothScroll.stopDecelerationWeighting", "0.2");
  /* Отключаем "игнорировать это предупреждение" в предупреждениях SB
   * Если кликнуть, он обходит блокировку для этого сеанса. Это средство для администраторов, чтобы обеспечить соблюдение SB */
 // user_pref("browser.safebrowsing.allowOverride", false);
+
+ /* Разрешаем работу Enhanced Tracking Protection во всех окнах
+  * [SETTING] Приватность > Защита от отслеживания > Во всех окнах */
+// user_pref("privacy.trackingprotection.enabled", true);
+
+ /* Включаем блокировку трекеров социальных сетей в ETP */
+// user_pref("privacy.trackingprotection.socialtracking.enabled", true);
+
+ /* Включаем функцию First Party Isolation */
+// user_pref("privacy.firstparty.isolate", true);
+
+ /* Запрещаем сайтам видеть информацию о модели видеокарты */
+// user_pref("webgl.enable-debug-renderer-info", false);
+
+ /* Отключаем использование рекомендуемых настроек по умолчанию
+  * [SETTING] Основное > Производительность > Использовать рекомендуемые настройки */
+// user_pref("browser.preferences.defaultPerformanceSettings.enabled", false);
+
+ /* Декодировать URL, содержащий UTF8-символы */
+// user_pref("browser.urlbar.decodeURLsOnCopy", true);
+
+ /* Отключаем обновления поисковых систем
+  * [NOTE] Это не влияет на встроенные поисковые системы Mozilla или веб-расширения. */
+// user_pref("browser.search.update", false);
+
+// user_pref("browser.crashReports.unsubmittedCheck.enabled", false); // [DEFAULT: false]
+
+ /* Отключаем метаданные расширений (описание дополнения)
+  * Вкладки с подробностями о расширении не будут иметь описания */ 
+// user_pref("extensions.getAddons.cache.enabled", false);
+
+// user_pref("extensions.webextensions.restrictedDomains", "");
+
+ /* TODO: Сделать описание */
+// user_pref("svg.context-properties.content.enabled", true);
