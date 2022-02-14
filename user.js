@@ -127,32 +127,6 @@ user_pref("network.connectivity-service.enabled", false);
 
 
 
-/* БЕЗОПАСНЫЙ БРАУЗЕР */
- /* Отключаем безопасный серфинг
-  * [WARNING] Делайте это на свой страх и риск! Это главные переключатели.
-  * [SETTING] Приватность > Защита > Блокировать опасное и обманывающее содержимое */
-user_pref("browser.safebrowsing.malware.enabled", false);
-user_pref("browser.safebrowsing.phishing.enabled", false);
- /* Отключаем проверку загрузок
-  * Это главный переключатель для safebrowsing.downloads
-  * [SETTING] Приватность > Защита > Блокировать опасные загрузки */
-user_pref("browser.safebrowsing.downloads.enabled", false);
- /* Отключаем проверку загрузок
-  * Чтобы проверить безопасность определенных исполняемых файлов, браузер отправляет информацию
-  * о файле, включая имя, дату, размер и криптографический хэш в Google
-  * Служба безопасного просмотра уже определяет, следует ли блокировать файл. */
-user_pref("browser.safebrowsing.downloads.remote.enabled", false);
-user_pref("browser.safebrowsing.downloads.remote.url", "");
- /* Отключаем проверку на наличие нежелательного ПО
-  * [SETTING] Приватность > Защита > Предупреждать о нежелательных и редко загружаемых программах */
-user_pref("browser.safebrowsing.downloads.remote.block_potentially_unwanted", false);
-user_pref("browser.safebrowsing.downloads.remote.block_uncommon", false);
- /* Отключаем "игнорировать это предупреждение" в предупреждениях SB
-  * Если кликнуть, он обходит блокировку для этого сеанса. Это средство для администраторов, чтобы обеспечить соблюдение SB */
-user_pref("browser.safebrowsing.allowOverride", false);
-
-
-
 /* РАСШИРЕНИЯ */
  /* Отключаем метаданные расширений (описание дополнения)
   * Вкладки с подробностями о расширении не будут иметь описания */ 
