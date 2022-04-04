@@ -163,8 +163,6 @@ user_pref("privacy.userContext.enabled", true);
 
 
 /* ЗАЩИТА */
- /* Включаем блокировку небезопасного контента (например, изображения) на https-страницах */
-user_pref("security.mixed_content.block_display_content", true);
  /* Включаем применение Punycode для доменов для предотвращение IDN атак
   * Например, злоумышленник отправляет вам URL-адрес,
   * который выглядит так, как будто он принадлежит одному сайту,
@@ -389,3 +387,6 @@ user_pref("general.smoothScroll.stopDecelerationWeighting", "0.2");
 
  /* TODO: Сделать описание */
 // user_pref("svg.context-properties.content.enabled", true);
+
+ /* Включаем блокировку небезопасного контента (например, изображения) на https-страницах */
+// user_pref("security.mixed_content.block_display_content", true);
